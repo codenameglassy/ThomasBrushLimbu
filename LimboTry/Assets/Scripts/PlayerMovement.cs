@@ -22,6 +22,8 @@ public class PlayerMovement : MonoBehaviour
     GameObject crossHair;
     public GameObject effectorTarget;
     bool canMove = true;
+    Transform gunPoint;
+    [SerializeField] GameObject bulletDustPs;
     // Start is called before the first frame update
 
     private void Awake()
@@ -32,6 +34,7 @@ public class PlayerMovement : MonoBehaviour
         audio_ = FindObjectOfType<AudioManagerCS>();
         ik = GetComponent<IKManager2D>();
         crossHair = GameObject.Find("CrossHair");
+        gunPoint = GameObject.Find("gunPoint").transform;
         //groundCheckPos = gameObject.transform.Find("GroundCheckPos").transform;
 
     }
@@ -79,14 +82,24 @@ public class PlayerMovement : MonoBehaviour
 
 
 
-    public bool aiming = false;
+    [HideInInspector]public bool aiming = false;
 
     Vector2 direction;
     void Aim()
     {
-       
+
+        if (Input.GetMouseButtonDown(0))
+        {
+            if (!aiming)
+            {
+                return;
+            }
+            Instantiate(bulletDustPs, gunPoint.position, gunPoint.rotation);
+            FindObjectOfType<AudioManagerCS>().Play("Fire");
+        }
         if (Input.GetMouseButtonDown(1))
         {
+
             FindObjectOfType<AudioManagerCS>().Play("GunCock");
         }
         if (Input.GetMouseButton(1))
