@@ -7,10 +7,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 6132490704442008180, guid: ee613ced80f242c46817ce1ce0d95c4d, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7572253917254467545, guid: ee613ced80f242c46817ce1ce0d95c4d, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -29,19 +25,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7572253917254467545, guid: ee613ced80f242c46817ce1ce0d95c4d, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9435362
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7572253917254467545, guid: ee613ced80f242c46817ce1ce0d95c4d, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7572253917254467545, guid: ee613ced80f242c46817ce1ce0d95c4d, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7572253917254467545, guid: ee613ced80f242c46817ce1ce0d95c4d, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.33126947
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7572253917254467545, guid: ee613ced80f242c46817ce1ce0d95c4d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -53,35 +49,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7572253917254467545, guid: ee613ced80f242c46817ce1ce0d95c4d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 38.692
-      objectReference: {fileID: 0}
-    - target: {fileID: 7939294350906411154, guid: ee613ced80f242c46817ce1ce0d95c4d, type: 3}
-      propertyPath: m_SortingLayer
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7939294350906411154, guid: ee613ced80f242c46817ce1ce0d95c4d, type: 3}
-      propertyPath: m_SortingOrder
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7939294350906411154, guid: ee613ced80f242c46817ce1ce0d95c4d, type: 3}
-      propertyPath: m_SortingLayerID
-      value: 1129429933
       objectReference: {fileID: 0}
     - target: {fileID: 8781479437381691322, guid: ee613ced80f242c46817ce1ce0d95c4d, type: 3}
       propertyPath: m_Name
-      value: Vase_Breakable Variant (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 8781479437381691322, guid: ee613ced80f242c46817ce1ce0d95c4d, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9095541553507020586, guid: ee613ced80f242c46817ce1ce0d95c4d, type: 3}
-      propertyPath: m_Material
-      value: 
-      objectReference: {fileID: 6200000, guid: ef24cce927a079f42a13fdc3a3caf91a, type: 2}
-    - target: {fileID: 9095541553507020586, guid: ee613ced80f242c46817ce1ce0d95c4d, type: 3}
-      propertyPath: m_GravityScale
-      value: 4
+      value: Vase_Breakable Variant
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ee613ced80f242c46817ce1ce0d95c4d, type: 3}

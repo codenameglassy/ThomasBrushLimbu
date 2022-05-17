@@ -6,6 +6,7 @@ public class Projectile : MonoBehaviour
 {
     Rigidbody2D rb;
     [SerializeField] float force;
+    [SerializeField] float life = 3f;
     Transform crossHair;
     private void Awake()
     {
@@ -16,6 +17,7 @@ public class Projectile : MonoBehaviour
     void Start()
     {
         rb.AddForce(transform.right * force, ForceMode2D.Impulse);
+        Destroy(gameObject, life);
     }
 
     
