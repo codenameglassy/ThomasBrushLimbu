@@ -24,7 +24,7 @@ public class PlayerMovement : MonoBehaviour
     bool canMove = true;
     Transform gunPoint;
     [SerializeField] GameObject bulletDustPs;
-
+    [SerializeField] GameObject bulletPrefab;
     GameObject rightEye;
     CapsuleCollider2D collider;
     // Start is called before the first frame update
@@ -106,6 +106,7 @@ public class PlayerMovement : MonoBehaviour
                 return;
             }
             Instantiate(bulletDustPs, gunPoint.position, gunPoint.rotation);
+            SpawnBullet();
             FindObjectOfType<AudioManagerCS>().Play("Fire");
         }
         if (Input.GetMouseButtonDown(1))
@@ -192,22 +193,16 @@ public class PlayerMovement : MonoBehaviour
         ik.weight = weight;
     }
 
+    public void SpawnBullet()
+    {
+        Instantiate(bulletPrefab, gunPoint.position, gunPoint.rotation);
+    }
+  
 
-    [Header("CheckGround")]
-    [SerializeField] float radius;
-    [SerializeField] Transform groundCheckPos;
-    [SerializeField] LayerMask whatIsGround;
-    public bool isGrounded;
-
-    const int maxReturnedIntersections = 1;
-    private RaycastHit2D[] hits = new RaycastHit2D[maxReturnedIntersections];
+    
     public void CheckSurroundings()
     {
-        //isGrounded = Physics2D.OverlapCircle(groundCheckPos.position, radius, whatIsGround);
-
-        //return;
-
-      
+       
 
         if (controller.m_Grounded)
         {
@@ -223,26 +218,5 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    public bool IsGrounded()
-    {
-        float extraHeight = .05f;
-        RaycastHit2D rayCastHit = Physics2D.Raycast(collider.bounds.center, Vector2.down, collider.bounds.extents.y + extraHeight, whatIsGround);
-        Color rayColor;
-        if(rayCastHit.collider != null)
-        {
-            rayColor = Color.green;
-        }
-        else
-        {
-            rayColor = Color.red;
-        }
-        Debug.DrawRay(collider.bounds.center, Vector2.down * (collider.bounds.extents.y + extraHeight));
-        return rayCastHit.collider != null;
-    }
 
-    private void OnDrawGizmos()
-    {
-        Gizmos.DrawWireSphere(groundCheckPos.position, radius);
-        //Gizmos.DrawRay(groundCheckPos.position, Vector2.down * radius);
-    }
 }
