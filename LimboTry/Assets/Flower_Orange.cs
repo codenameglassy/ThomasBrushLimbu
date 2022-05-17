@@ -19,7 +19,7 @@ public class Flower_Orange : MonoBehaviour
         {
             animator.SetTrigger("Sway");
             Instantiate(flowerSpore, SpawnPos.position, SpawnPos.rotation);
-            FindObjectOfType<AudioManagerCS>().Play("Chime");
+            //FindObjectOfType<AudioManagerCS>().Play("Chime");
         }
     }
 }
