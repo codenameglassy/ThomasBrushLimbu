@@ -36,7 +36,7 @@ public class PlayerMovement : MonoBehaviour
         dust = gameObject.transform.Find("DustPS").GetComponent<ParticleSystem>();
         audio_ = FindObjectOfType<AudioManagerCS>();
         ik = GetComponent<IKManager2D>();
-        crossHair = GameObject.Find("CrossHair");
+       
         gunPoint = GameObject.Find("gunPoint").transform;
         rightEye = GameObject.Find("EyeL_1");
         collider = GetComponent<CapsuleCollider2D>();
@@ -46,7 +46,14 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
 
+        if (crossHair == null)
+        {
+            crossHair = GameObject.Find("CrossHair");
+        }
+
     }
+
+
 
     // Update is called once per frame
     void Update()
@@ -92,7 +99,6 @@ public class PlayerMovement : MonoBehaviour
     Vector2 direction;
     void Aim()
     {
-
         if (Input.GetMouseButtonDown(0))
         {
             if (!aiming)
@@ -138,12 +144,12 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.W))
         {
-            if (!IsGrounded())
+
+
+            if (!controller.m_Grounded)
             {
                 return;
             }
-            
-
            
             animator.SetTrigger("takeOff");
             //animator.SetBool("jump", true);
@@ -156,8 +162,8 @@ public class PlayerMovement : MonoBehaviour
     public void OnLand()
     {
 
-       
-        
+        jump = false;
+
     }
 
     public void MoveStateOFF()
@@ -191,7 +197,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float radius;
     [SerializeField] Transform groundCheckPos;
     [SerializeField] LayerMask whatIsGround;
-   // bool isGrounded;
+    public bool isGrounded;
 
     const int maxReturnedIntersections = 1;
     private RaycastHit2D[] hits = new RaycastHit2D[maxReturnedIntersections];
@@ -199,11 +205,11 @@ public class PlayerMovement : MonoBehaviour
     {
         //isGrounded = Physics2D.OverlapCircle(groundCheckPos.position, radius, whatIsGround);
 
-        // return;
+        //return;
 
       
 
-        if (IsGrounded())
+        if (controller.m_Grounded)
         {
             
                 jump = false;
@@ -219,7 +225,7 @@ public class PlayerMovement : MonoBehaviour
 
     public bool IsGrounded()
     {
-        float extraHeight = .03f;
+        float extraHeight = .05f;
         RaycastHit2D rayCastHit = Physics2D.Raycast(collider.bounds.center, Vector2.down, collider.bounds.extents.y + extraHeight, whatIsGround);
         Color rayColor;
         if(rayCastHit.collider != null)

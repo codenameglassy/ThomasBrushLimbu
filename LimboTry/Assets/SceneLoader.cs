@@ -6,6 +6,8 @@ public class SceneLoader : MonoBehaviour
 {
     SceneManager_ sceneManager;
     [SerializeField] string sceneToLoad;
+    [SerializeField] int nextSpawnPosition;
+
     private void Awake()
     {
         sceneManager = FindObjectOfType<SceneManager_>();
@@ -15,6 +17,8 @@ public class SceneLoader : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             sceneManager.LoadScene(sceneToLoad);
+
+            PlayerPrefs.SetInt("SpawnPosition", nextSpawnPosition);
         }
     }
 }
