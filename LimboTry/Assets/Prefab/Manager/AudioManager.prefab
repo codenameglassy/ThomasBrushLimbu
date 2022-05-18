@@ -94,3 +94,10 @@ MonoBehaviour:
     isLoop: 0
     tag: 0
     source: {fileID: 0}
+  - name: VaseBreaking
+    clip: {fileID: 8300000, guid: 03445c7b3eb700a42a852a5291837127, type: 3}
+    volume: 0.8
+    pitch: 1
+    isLoop: 0
+    tag: 0
+    source: {fileID: 0}
