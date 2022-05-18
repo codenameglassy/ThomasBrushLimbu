@@ -107,7 +107,7 @@ public class PlayerMovement : MonoBehaviour
             }
             Instantiate(bulletDustPs, gunPoint.position, gunPoint.rotation);
             SpawnBullet();
-            FindObjectOfType<AudioManagerCS>().Play("Fire");
+            FindObjectOfType<AudioManagerCS>().PlayOneShot("Fire");
         }
         if (Input.GetMouseButtonDown(1))
         {
@@ -143,7 +143,7 @@ public class PlayerMovement : MonoBehaviour
     {
         
 
-        if (Input.GetKeyDown(KeyCode.W))
+        if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.Space))
         {
 
 

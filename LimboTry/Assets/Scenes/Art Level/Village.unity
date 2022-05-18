@@ -1226,6 +1226,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 427730576632740424, guid: f1c43d8ef9bafd64f9d26775214ec40e, type: 3}
+      propertyPath: sounds.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 427730576632740424, guid: f1c43d8ef9bafd64f9d26775214ec40e, type: 3}
+      propertyPath: sounds.Array.data[7].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 03445c7b3eb700a42a852a5291837127, type: 3}
+    - target: {fileID: 427730576632740424, guid: f1c43d8ef9bafd64f9d26775214ec40e, type: 3}
+      propertyPath: sounds.Array.data[7].name
+      value: VaseBreaking
+      objectReference: {fileID: 0}
+    - target: {fileID: 427730576632740424, guid: f1c43d8ef9bafd64f9d26775214ec40e, type: 3}
+      propertyPath: sounds.Array.data[7].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 427730576632740424, guid: f1c43d8ef9bafd64f9d26775214ec40e, type: 3}
+      propertyPath: sounds.Array.data[7].volume
+      value: 0.8
+      objectReference: {fileID: 0}
     - target: {fileID: 427730576632740425, guid: f1c43d8ef9bafd64f9d26775214ec40e, type: 3}
       propertyPath: m_RootOrder
       value: 5

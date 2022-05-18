@@ -3,7 +3,9 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Breakables
+  - FxTemporaire
   layers:
   - Default
   - TransparentFX
@@ -13,7 +15,7 @@ TagManager:
   - UI
   - Ground
   - Player
-  - 
+  - Player NotTouchable
   - 
   - 
   - 
@@ -46,6 +48,9 @@ TagManager:
     locked: 0
   - name: MidGround
     uniqueID: 1129429933
+    locked: 0
+  - name: Npc
+    uniqueID: 2277418585
     locked: 0
   - name: Player
     uniqueID: 2303170709

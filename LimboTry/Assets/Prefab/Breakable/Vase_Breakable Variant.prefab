@@ -7,6 +7,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3038939998200435025, guid: ee613ced80f242c46817ce1ce0d95c4d, type: 3}
+      propertyPath: m_Size.x
+      value: 2.2599483
+      objectReference: {fileID: 0}
+    - target: {fileID: 3038939998200435025, guid: ee613ced80f242c46817ce1ce0d95c4d, type: 3}
+      propertyPath: m_Size.y
+      value: 3.036892
+      objectReference: {fileID: 0}
+    - target: {fileID: 3038939998200435025, guid: ee613ced80f242c46817ce1ce0d95c4d, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3038939998200435025, guid: ee613ced80f242c46817ce1ce0d95c4d, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.01802802
+      objectReference: {fileID: 0}
+    - target: {fileID: 3038939998200435025, guid: ee613ced80f242c46817ce1ce0d95c4d, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.0803259
+      objectReference: {fileID: 0}
+    - target: {fileID: 3038939998200435025, guid: ee613ced80f242c46817ce1ce0d95c4d, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7572253917254467545, guid: ee613ced80f242c46817ce1ce0d95c4d, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -51,9 +75,35 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8050560184345151698, guid: ee613ced80f242c46817ce1ce0d95c4d, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8781479437381691322, guid: ee613ced80f242c46817ce1ce0d95c4d, type: 3}
       propertyPath: m_Name
       value: Vase_Breakable Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 8781479437381691322, guid: ee613ced80f242c46817ce1ce0d95c4d, type: 3}
+      propertyPath: m_TagString
+      value: Breakables
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ee613ced80f242c46817ce1ce0d95c4d, type: 3}
+--- !u!1 &3865885038038968408 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8781479437381691322, guid: ee613ced80f242c46817ce1ce0d95c4d, type: 3}
+  m_PrefabInstance: {fileID: 5510282718518644706}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &968864169873818863
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3865885038038968408}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: baf808ffe950bc64d92612bc4615e0bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  brokenPrefab: {fileID: 2609499924739701220, guid: 6c59d2baaf6efaa4b863f0c13207609e, type: 3}

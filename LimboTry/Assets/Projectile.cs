@@ -5,6 +5,7 @@ using UnityEngine;
 public class Projectile : MonoBehaviour
 {
     Rigidbody2D rb;
+    [SerializeField] GameObject hitVFX;
     [SerializeField] float force;
     [SerializeField] float life = 3f;
     Transform crossHair;
@@ -20,5 +21,18 @@ public class Projectile : MonoBehaviour
         Destroy(gameObject, life);
     }
 
-    
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Breakables"))
+        {
+            collision.GetComponent<Breakables>().Break();
+            Instantiate(hitVFX, transform.position, transform.rotation);
+            Destroy(gameObject);
+            return;
+        }
+
+        Instantiate(hitVFX, transform.position, transform.rotation);
+    }
+
+
 }

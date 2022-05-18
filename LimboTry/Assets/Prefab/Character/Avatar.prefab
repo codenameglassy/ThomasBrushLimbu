@@ -31,6 +31,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Avatar
       objectReference: {fileID: 0}
+    - target: {fileID: 5555501030482746555, guid: 0d165f14c6b26cf439dc685e77c051dc, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.329
+      objectReference: {fileID: 0}
     - target: {fileID: 5555501031043824124, guid: 0d165f14c6b26cf439dc685e77c051dc, type: 3}
       propertyPath: bulletPrefab
       value: 

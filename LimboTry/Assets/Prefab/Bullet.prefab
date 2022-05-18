@@ -137,7 +137,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ce93ea1a289e4a4d8d411d23d635cb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hitVFX: {fileID: 8923752672724310165, guid: 23cb9a387b381bc418ac2effbde0d676, type: 3}
   force: 70
+  life: 3
 --- !u!96 &5092778595114969189
 TrailRenderer:
   serializedVersion: 2
