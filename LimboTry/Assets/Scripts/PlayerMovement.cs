@@ -164,6 +164,7 @@ public class PlayerMovement : MonoBehaviour
     {
 
         jump = false;
+        controller.m_Grounded = true;
 
     }
 

@@ -27,17 +27,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -0.484
       objectReference: {fileID: 0}
+    - target: {fileID: 2146578573, guid: 0d165f14c6b26cf439dc685e77c051dc, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.403
+      objectReference: {fileID: 0}
+    - target: {fileID: 2146578573, guid: 0d165f14c6b26cf439dc685e77c051dc, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.05
+      objectReference: {fileID: 0}
     - target: {fileID: 5403990933416637234, guid: 0d165f14c6b26cf439dc685e77c051dc, type: 3}
       propertyPath: m_Name
       value: Avatar
       objectReference: {fileID: 0}
     - target: {fileID: 5555501030482746555, guid: 0d165f14c6b26cf439dc685e77c051dc, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.37
+      value: -0.61
       objectReference: {fileID: 0}
     - target: {fileID: 5555501030482746555, guid: 0d165f14c6b26cf439dc685e77c051dc, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.094
+      value: 0.246
       objectReference: {fileID: 0}
     - target: {fileID: 5555501031043824115, guid: 0d165f14c6b26cf439dc685e77c051dc, type: 3}
       propertyPath: m_Size.y
