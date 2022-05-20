@@ -11,4 +11,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Art Level/MeadowPass.unity
     guid: 766470b2ce663814baab2dbc029dcae8
+  - enabled: 1
+    path: Assets/Scenes/Art Level/RoomLocker.unity
+    guid: 58000dad05bb47d48b01e809ba37f6a8
+  - enabled: 1
+    path: Assets/Scenes/Art Level/Room.unity
+    guid: 9d756f2fcbc7fa1438e85d2ab39c7f63
   m_configObjects: {}
