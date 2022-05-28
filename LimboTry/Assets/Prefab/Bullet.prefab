@@ -75,7 +75,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1991796587
-  m_SortingLayer: 3
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
   m_Color: {r: 0.91372555, g: 0.4666667, b: 0.027450982, a: 1}
@@ -138,6 +138,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitVFX: {fileID: 8923752672724310165, guid: 23cb9a387b381bc418ac2effbde0d676, type: 3}
+  bloodVFX: {fileID: 100000, guid: 979632a27455af442bd2d8f36eb0ffce, type: 3}
   force: 70
   life: 3
 --- !u!96 &5092778595114969189
@@ -180,7 +181,7 @@ TrailRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1991796587
-  m_SortingLayer: 3
+  m_SortingLayer: 5
   m_SortingOrder: -1
   m_Time: 0.08
   m_Parameters:

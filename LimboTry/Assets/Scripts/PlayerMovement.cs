@@ -38,7 +38,7 @@ public class PlayerMovement : MonoBehaviour
         ik = GetComponent<IKManager2D>();
        
         gunPoint = GameObject.Find("gunPoint").transform;
-        rightEye = GameObject.Find("EyeL_1");
+       // rightEye = gameObject.transform.Find("EyeL_1").gameObject;
         collider = GetComponent<CapsuleCollider2D>();
         //groundCheckPos = gameObject.transform.Find("GroundCheckPos").transform;
 
@@ -120,7 +120,7 @@ public class PlayerMovement : MonoBehaviour
             SetIkWeight(1);
             crossHair.SetActive(true);
 
-            rightEye.transform.localScale = new Vector2(.5f, 1.2f);
+            //rightEye.transform.localScale = new Vector2(.5f, 1.2f);
 
             Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             direction = new Vector2(mousePos.x - transform.position.x, mousePos.y - transform.position.y);
@@ -134,7 +134,7 @@ public class PlayerMovement : MonoBehaviour
         aiming = false;
         SetIkWeight(0);
         crossHair.SetActive(false);
-        rightEye.transform.localScale = new Vector2(1f, 1f);
+       // rightEye.transform.localScale = new Vector2(1f, 1f);
     }
 
     bool jump = false;

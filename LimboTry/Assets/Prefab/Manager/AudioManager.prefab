@@ -101,3 +101,10 @@ MonoBehaviour:
     isLoop: 0
     tag: 0
     source: {fileID: 0}
+  - name: Theme
+    clip: {fileID: 8300000, guid: cb9158bc2e34bca4c90fe33f5fbb8f94, type: 3}
+    volume: 0.4
+    pitch: 1
+    isLoop: 1
+    tag: 1
+    source: {fileID: 0}

@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Breakables
   - FxTemporaire
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -16,8 +17,8 @@ TagManager:
   - Ground
   - Player
   - Player NotTouchable
-  - 
-  - 
+  - Enemy
+  - BreakAbles
   - 
   - 
   - 
@@ -51,6 +52,9 @@ TagManager:
     locked: 0
   - name: Npc
     uniqueID: 2277418585
+    locked: 0
+  - name: Enemy
+    uniqueID: 2264336243
     locked: 0
   - name: Player
     uniqueID: 2303170709

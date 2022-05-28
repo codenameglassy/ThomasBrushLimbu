@@ -6,6 +6,7 @@ public class Projectile : MonoBehaviour
 {
     Rigidbody2D rb;
     [SerializeField] GameObject hitVFX;
+    [SerializeField] GameObject bloodVFX;
     [SerializeField] float force;
     [SerializeField] float life = 3f;
     Transform crossHair;
@@ -31,8 +32,19 @@ public class Projectile : MonoBehaviour
             return;
         }
 
+        if (collision.CompareTag("Enemy"))
+
+        {
+            var player = FindObjectOfType<PlayerMovement>();
+            collision.GetComponent<EnemyHealth>().TakeDamage(player.gameObject.transform.position.x);
+            Instantiate(bloodVFX, transform.position, transform.rotation);
+            Instantiate(hitVFX, transform.position, transform.rotation);
+            Destroy(gameObject);
+            return;
+        }
         Instantiate(hitVFX, transform.position, transform.rotation);
     }
 
+   
 
 }
