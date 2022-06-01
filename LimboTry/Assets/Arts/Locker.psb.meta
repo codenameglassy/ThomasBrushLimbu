@@ -100,8 +100,8 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 754
-      width: 249
-      height: 353
+      width: 416
+      height: 522
     spriteID: 0b1cffa52397f7c4bb7b7ff951db4b56
     spriteBone: []
     spriteOutline: []
@@ -111,7 +111,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -412, y: 391}
+    uvTransform: {x: -328, y: 476}
   - name: Locker
     originalName: 
     pivot: {x: 0.5, y: 0.5}

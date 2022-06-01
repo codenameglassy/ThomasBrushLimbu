@@ -102,9 +102,30 @@ MonoBehaviour:
     tag: 0
     source: {fileID: 0}
   - name: Theme
-    clip: {fileID: 8300000, guid: cb9158bc2e34bca4c90fe33f5fbb8f94, type: 3}
+    clip: {fileID: 8300000, guid: 0cf96e1508a67df46ac0aa4a58243960, type: 3}
     volume: 0.4
     pitch: 1
     isLoop: 1
+    tag: 1
+    source: {fileID: 0}
+  - name: getSfx
+    clip: {fileID: 8300000, guid: 0f41fdddbfb574143818fd610bc7d357, type: 3}
+    volume: 0.8
+    pitch: 1
+    isLoop: 0
+    tag: 1
+    source: {fileID: 0}
+  - name: light
+    clip: {fileID: 8300000, guid: c7c9c4e5cbac3b94192f7f85ae9cbfdd, type: 3}
+    volume: 0.8
+    pitch: 1
+    isLoop: 0
+    tag: 1
+    source: {fileID: 0}
+  - name: locked
+    clip: {fileID: 8300000, guid: 1c0b098f2dee83e4f9eb4a113aed7754, type: 3}
+    volume: 0.8
+    pitch: 1
+    isLoop: 0
     tag: 1
     source: {fileID: 0}

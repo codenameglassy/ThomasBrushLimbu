@@ -12,6 +12,7 @@ public class LightRoomOne : MonoBehaviour
 
     private void Start()
     {
+        canPress = false;
         offLight = transform.Find("OffLight").gameObject;
         onLight = transform.Find("GreenLight").gameObject;
         E = transform.Find("E").gameObject;
@@ -39,6 +40,7 @@ public class LightRoomOne : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.E))
         {
+            FindObjectOfType<AudioManagerCS>().Play("light");
 
             pressed = true;
             PlayerPrefs.SetInt("LightRoomOne", 1);

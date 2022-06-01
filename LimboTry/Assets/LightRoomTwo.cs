@@ -40,6 +40,7 @@ public class LightRoomTwo : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.E))
         {
+            FindObjectOfType<AudioManagerCS>().Play("light");
 
             pressed = true;
             PlayerPrefs.SetInt("LightRoomTwo", 1);

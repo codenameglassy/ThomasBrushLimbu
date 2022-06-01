@@ -20,6 +20,9 @@ public class PlayerMovement : MonoBehaviour
 
 
     GameObject crossHair;
+    [HideInInspector]public GameObject gunCanvas;
+    public GameObject gun;
+
     public GameObject effectorTarget;
     bool canMove = true;
     Transform gunPoint;
@@ -42,6 +45,9 @@ public class PlayerMovement : MonoBehaviour
         collider = GetComponent<CapsuleCollider2D>();
         //groundCheckPos = gameObject.transform.Find("GroundCheckPos").transform;
 
+        // gun = transform.Find("Gun").gameObject;
+        gunCanvas = GameObject.Find("GunView");
+
     }
     void Start()
     {
@@ -50,6 +56,17 @@ public class PlayerMovement : MonoBehaviour
         {
             crossHair = GameObject.Find("CrossHair");
         }
+
+        if(PlayerPrefs.GetInt("PlayerHasGun") == 0)
+        {
+            gun.SetActive(false);
+            gunCanvas.SetActive(false);
+        }else if(PlayerPrefs.GetInt("PlayerHasGun") == 1)
+        {
+            gun.SetActive(true);
+            gunCanvas.SetActive(true);
+        }
+
 
     }
 
@@ -99,6 +116,8 @@ public class PlayerMovement : MonoBehaviour
     Vector2 direction;
     void Aim()
     {
+        
+
         if (Input.GetMouseButtonDown(0))
         {
             if (!aiming)
@@ -112,10 +131,18 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetMouseButtonDown(1))
         {
 
+            if (PlayerPrefs.GetInt("PlayerHasGun") == 0)
+            {
+                return;
+            }
             FindObjectOfType<AudioManagerCS>().Play("GunCock");
         }
         if (Input.GetMouseButton(1))
         {
+            if (PlayerPrefs.GetInt("PlayerHasGun") == 0)
+            {
+                return;
+            }
             aiming = true;
             SetIkWeight(1);
             crossHair.SetActive(true);

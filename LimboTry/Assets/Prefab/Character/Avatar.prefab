@@ -168,6 +168,10 @@ PrefabInstance:
       value: 4.789058
       objectReference: {fileID: 0}
     - target: {fileID: 5555501031043824124, guid: 0d165f14c6b26cf439dc685e77c051dc, type: 3}
+      propertyPath: gun
+      value: 
+      objectReference: {fileID: 229777844116992716}
+    - target: {fileID: 5555501031043824124, guid: 0d165f14c6b26cf439dc685e77c051dc, type: 3}
       propertyPath: bulletPrefab
       value: 
       objectReference: {fileID: 5092778595114969195, guid: c1ae18edc128d364684c824a8edf624a, type: 3}
@@ -405,3 +409,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d165f14c6b26cf439dc685e77c051dc, type: 3}
+--- !u!1 &229777844116992716 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1280989194, guid: 0d165f14c6b26cf439dc685e77c051dc, type: 3}
+  m_PrefabInstance: {fileID: 229777843104737990}
+  m_PrefabAsset: {fileID: 0}

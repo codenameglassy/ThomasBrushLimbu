@@ -23,6 +23,6 @@ MonoBehaviour:
     m_Bits: 128
   whatIsGround:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 2112
   bombPrefab: {fileID: 8529502744321883957, guid: 910b53647bc42f54c8b0f9596fa27711, type: 3}
   coinPrefab: {fileID: 822744983430636483, guid: 8c78cc6dfaeb3734ca222cc12730e754, type: 3}
